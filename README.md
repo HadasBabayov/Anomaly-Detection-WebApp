@@ -34,9 +34,9 @@ As a result of the process of the algorithms we see in our web page a table with
 			- train.csv
 	
 Other files:
-	- AnomalyDetectionUtil.js
-	- Anomaly Report.js
-	- CorrelatedFeatures.js
+	- AnomalyDetectionUtil.js**
+	- Anomaly Report.js**
+	- CorrelatedFeatures.js**
 	- DetectAnomalies.js
 	- Shapes.js
 	- TimeSeries.js
@@ -72,6 +72,10 @@ Other files:
 * Liav Trabelsy
 * Ronli Vignanski
 * Eyal Hazi
+
+
+
+
 
 
 
