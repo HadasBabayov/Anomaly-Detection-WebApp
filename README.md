@@ -19,11 +19,11 @@ As a result of the process of the algorithms we see in our web page a table with
 * model
 * view
 
-**controller** 
+**controller**<br/>
    app.js - the server, the one which connects between all the requests we have in our web app to the model (which I will explain soon).
    It handels on the get and post requests('/', '/detect')
 
-**model** 
+**model**<br/>
 	we have two folders and others files:<br/>
 	The folders:<br/>
 	algorithms: (we want to implement on the data we got from the user)<br/>
@@ -43,11 +43,11 @@ Other files:<br/>
 	All these files are the implementation for the algorithms.
 		
 **view**<br/>
--checkFiles.js<br/>
--display.css<br/>
--display.html<br/>
--index.css<br/>
--index.html<br/>
+- checkFiles.js<br/>
+- display.css<br/>
+- display.html<br/>
+- index.css<br/>
+- index.html<br/>
 	The index.html shows the buttons of choose the algorithm, loading the files, check them and upload them.
 	The display.html shows the table with the information on the anomalies.
 	The css files are for the design of the html files.
@@ -72,6 +72,8 @@ Other files:<br/>
 * Liav Trabelsy
 * Ronli Vignanski
 * Eyal Hazi
+
+
 
 
 
