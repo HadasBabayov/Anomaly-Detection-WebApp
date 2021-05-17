@@ -43,11 +43,11 @@ Other files:<br/>
 	All these files are the implementation for the algorithms.
 		
 **view**<br/>
-     - checkFiles.js<br/>
-     - display.css<br/>
-     - display.html<br/>
-     - index.css<br/>
-     - index.html<br/>
+-checkFiles.js<br/>
+-display.css<br/>
+-display.html<br/>
+-index.css<br/>
+-index.html<br/>
 	The index.html shows the buttons of choose the algorithm, loading the files, check them and upload them.
 	The display.html shows the table with the information on the anomalies.
 	The css files are for the design of the html files.
@@ -72,6 +72,11 @@ Other files:<br/>
 * Liav Trabelsy
 * Ronli Vignanski
 * Eyal Hazi
+
+
+
+
+
 
 
 
