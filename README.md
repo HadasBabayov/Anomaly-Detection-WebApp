@@ -24,30 +24,30 @@ As a result of the process of the algorithms we see in our web page a table with
    It handels on the get and post requests('/', '/detect')
 
 **model** 
-	we have two folders and others files:
-	The folders:
-	algorithms: (we want to implement on the data we got from the user) 
-			- LinearAlgorithm.js
-			- HybridAlgorithm.js
-	generatedFiles: (files we created in our project in order to use them for the algorithms)
-			- anomaly.csv
-			- train.csv
+	we have two folders and others files:<br/>
+	The folders:<br/>
+	algorithms: (we want to implement on the data we got from the user)<br/>
+			- LinearAlgorithm.js<br/>
+			- HybridAlgorithm.js<br/>
+	generatedFiles: (files we created in our project in order to use them for the algorithms)<br/>
+			- anomaly.csv<br/>
+			- train.csv<br/>
 	
-Other files:
+Other files:<br/>
 	- AnomalyDetectionUtil.js<br/>
-	- Anomaly Report.js
-	- CorrelatedFeatures.js
-	- DetectAnomalies.js
-	- Shapes.js
-	- TimeSeries.js
+	- Anomaly Report.js<br/>
+	- CorrelatedFeatures.js<br/>
+	- DetectAnomalies.js<br/>
+	- Shapes.js<br/>
+	- TimeSeries.js<br/>
 	All these files are the implementation for the algorithms.
 		
-**view**
-	- checkFiles.js
-	- display.css
-	- display.html
-	- index.css
-	- index.html
+**view**<br/>
+	- checkFiles.js<br/>
+	- display.css<br/>
+	- display.html<br/>
+	- index.css<br/>
+	- index.html<br/>
 	The index.html shows the buttons of choose the algorithm, loading the files, check them and upload them.
 	The display.html shows the table with the information on the anomalies.
 	The css files are for the design of the html files.
@@ -72,9 +72,6 @@ Other files:
 * Liav Trabelsy
 * Ronli Vignanski
 * Eyal Hazi
-
-
-
 
 
 
