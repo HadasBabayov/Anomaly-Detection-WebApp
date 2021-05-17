@@ -33,14 +33,14 @@ As a result of the process of the algorithms we see in our web page a table with
 			- anomaly.csv
 			- train.csv
 	
-	Other files:
-		- AnomalyDetectionUtil.js
-		- Anomaly Report.js
-		- CorrelatedFeatures.js
-		- DetectAnomalies.js
-		- Shapes.js
-		- TimeSeries.js
-		All these files are the implementation for the algorithms.
+Other files:
+	- AnomalyDetectionUtil.js
+	- Anomaly Report.js
+	- CorrelatedFeatures.js
+	- DetectAnomalies.js
+	- Shapes.js
+	- TimeSeries.js
+	All these files are the implementation for the algorithms.
 		
 **view**
 	- checkFiles.js
@@ -55,7 +55,7 @@ As a result of the process of the algorithms we see in our web page a table with
 
 **Instructions for using the application:**
 - Prepare two CSV files : first of them is for learning, and the second one about the anomalies.
-- Download IDE webStorm 2021.2.1 in order to run the application in a comfortable place (.Net Framework ???????).
+- Download IDE webStorm 2021.1.1 in order to run the application in a comfortable place.
 - Clone the project.
 - Install all the moudles we need for running the server, do it by writing in the terminal: npm install.
 - Connenct to the server by writing npm run dev in the terminal(of the webStorm for example).
@@ -72,6 +72,9 @@ As a result of the process of the algorithms we see in our web page a table with
 * Liav Trabelsy
 * Ronli Vignanski
 * Eyal Hazi
+
+
+
 
 
 
