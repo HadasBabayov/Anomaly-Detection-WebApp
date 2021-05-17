@@ -1,0 +1,135 @@
+.all-page {
+    background-image: linear-gradient(cornflowerblue, white);
+
+}
+
+.title {
+    margin-left: 600px;
+    font-family: Georgia, serif;
+    text-shadow: 1px 1px blue;
+}
+
+.file-button {
+    margin-left: 650px;
+    font-weight: bold;
+    font-family: Copperplate, Papyrus, fantasy;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: blue;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+  /*  position: sticky;*/
+}
+
+.file-button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.error-text{
+    margin-left: 350px;
+    position: fixed;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.choose-algorithm {
+    margin-left: 700px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    font-family: Copperplate, Papyrus, fantasy;
+    text-shadow: 1px 1px blue;
+    text-emphasis-style: double-circle;
+}
+
+.select-algorithm {
+    font-family: Copperplate, Papyrus, fantasy;
+    background-color: blue;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 730px;
+    margin-top: 10px;
+    width: 130px;
+    font-size: 20px;
+}
+
+.upload-button {
+    /*font-family: Georgia, serif;*/
+    /*font-family: italic bold 12px/30px Georgia, serif;*/
+    font-family: Copperplate, Papyrus, fantasy;
+    border-radius: 4px;
+    border: none;
+    background-color: blue;
+    border: black;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    width: 130px;
+    height: 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 730px;
+    /*font-family:  "Sofia", sans-serif;*/
+}
+.upload-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.select-graph-title{
+    font-family: Copperplate, Papyrus, fantasy;
+    text-shadow: 1px 1px blue;
+    text-emphasis-style: double-circle;
+    font-size: 17px;
+    margin-left: 100px;
+    font-weight: bold;
+}
+.list-box {
+    margin-left: 100px;
+    width: 200px;
+    height: 300px;
+    background-color: blue;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+.show-graph {
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+.anomaly-report-title {
+    font-family: Copperplate, Papyrus, fantasy;
+    text-shadow: 1px 1px blue;
+    text-emphasis-style: double-circle;
+    font-size: 17px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.anomaly-list {
+    width: 200px;
+    height: 300px;
+    background-color: blue;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Copperplate, Papyrus, fantasy;
+    margin-left: 50px;
+    margin-right: 300px;
+}
+
+.frame {
+    border: none;
+    margin-top: 15px;
+}

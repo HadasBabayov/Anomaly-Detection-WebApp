@@ -1,0 +1,38 @@
+{
+  "name": "AnomalyDetectionWebApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./controller/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon /controller/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HadasBabayov/AnomalyDetectionWebApp-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HadasBabayov/AnomalyDetectionWebApp-/issues"
+  },
+  "homepage": "https://github.com/HadasBabayov/AnomalyDetectionWebApp-#readme",
+  "dependencies": {
+    "collections": "^5.1.12",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "line-reader": "^0.4.0",
+    "n-readlines": "^1.0.1",
+    "node-fetch": "^2.6.1",
+    "node-json2html": "^2.1.0",
+    "node-line-reader": "^0.0.3",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7",
+    "smallest-enclosing-circle": "^1.0.2"
+  },
+  "devDependencies": {
+    "form-data": "^4.0.0",
+    "mathjs": "^9.3.2"
+  }
+}
