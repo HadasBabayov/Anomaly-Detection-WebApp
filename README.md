@@ -34,13 +34,13 @@ As a result of the process of the algorithms we see in our web page a table with
 			- train.csv
 	
 Other files:
-- AnomalyDetectionUtil.js
-- Anomaly Report.js
-- CorrelatedFeatures.js
-- DetectAnomalies.js
-- Shapes.js
-- TimeSeries.js
-All these files are the implementation for the algorithms.
+	- AnomalyDetectionUtil.js
+	- Anomaly Report.js
+	- CorrelatedFeatures.js
+	- DetectAnomalies.js
+	- Shapes.js
+	- TimeSeries.js
+	All these files are the implementation for the algorithms.
 		
 **view**
 	- checkFiles.js
