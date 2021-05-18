@@ -14,10 +14,10 @@ As a result of the process of the algorithms we see in our web page a table with
 
 
 ### App content:
- We organized our code in these folders:
-* controller
-* model
-* view
+ We organized our code in the design pattern of MVC.These are the folderswe created:
+* controller - responsible to connect between the view and the model<br/>
+* model - responsible for parsing the csv data we got from the user, learn them and write the anomalies<br/>
+* view - responsible for showing the results to the screen<br/>
 
 **controller**<br/>
    app.js - the server, the one which connects between all the requests we have in our web app to the model (which I will explain soon).
@@ -50,11 +50,13 @@ Other files:<br/>
 - index.html<br/>
 	The index.html shows the buttons of choose the algorithm, loading the files, check them and upload them.
 	The display.html shows the table with the information on the anomalies.
-	The css files are for the design of the html files.
+	The css files are for the design of the html files.<br/>
 
+Both the features we have to do, user case 1 and user case 2, use the same code. Most of the work in our application, learning and showing the detection anomalies, are in a function that handels the case of a '/' POST request. The response to this request is by a JSON which contains the results. The html page with the upload files button performs a '/detect' request, and the function that handels this case reuses the code by creating a fetch request to '/'.
+    
 
 **Instructions for using the application:**
-- Prepare two CSV files : first of them is for learning, and the second one about the anomalies.
+- Prepare two CSV files : first of them is for learning, and the second one about the anomalies. The first line of the csv files has to be the features names.
 - Download IDE webStorm 2021.1.1 in order to run the application in a comfortable place.
 - Clone the project.
 - Install all the moudles we need for running the server, do it by writing in the terminal: npm install.
@@ -62,6 +64,7 @@ Other files:<br/>
 - Connect to port 8080 on a web page for example, write in google chrom: localhost:8080/ .
 - The web page we created has to be shown in front of you in the google chrom.
 - Now, choose on which algorithm you want to work(linear or hybrid), choose two valid csv files(for learning and for anomalies) and click checkFiles, if they are valid the button will be changed to upload files, press it and then you will see the table with all the anomlies and where it has happened.
+- If you want to exit from the server, do ctrl c where you run it.
 
 **Anomaly Detection Web App - Explenation Video**
 
@@ -72,6 +75,9 @@ Other files:<br/>
 * Liav Trabelsy
 * Ronli Vignanski
 * Eyal Hazi
+
+
+
 
 
 
