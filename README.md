@@ -68,7 +68,7 @@ Both the features we have to do, user case 1 and user case 2, use the same code.
 
 **Anomaly Detection Web App - Explenation Video**
 
-[Watch here](https://youtu.be/EkVAL1K9l5Q)
+[Watch here](https://youtu.be/ZQ-VuTAEcls)
 
 #### Authors:
 * Hadas Babayov
