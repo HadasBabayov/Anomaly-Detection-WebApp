@@ -60,6 +60,7 @@ Both the features we have to do, user case 1 and user case 2, use the same code.
 - Prepare two CSV files : first of them is for learning, and the second one about the anomalies. The first line of the csv files has to be the features names.
 - Download IDE webStorm 2021.1.1 in order to run the application in a comfortable place.
 - Clone the project.
+- Do in the terminal cd "Anomaly Detection WebApp"
 - Install all the moudles we need for running the server, do it by writing in the terminal: npm install.
 - Connenct to the server by writing npm run dev in the terminal(of the webStorm for example).
 - Connect to port 8080 on a web page for example, write in google chrom: localhost:8080/ .
