@@ -65,7 +65,7 @@ app.post('/detect', (req, res) => {
                     ]
                 }
 
-                // 
+                //
                 let report = JSON.stringify(result);
                 let html = json2html.render(report, template);
 
@@ -75,22 +75,8 @@ app.post('/detect', (req, res) => {
                 }
                 res.end()
             })
-
-
-        //return to the view the results
-
-        /* res.writeHead(200, {'Content-Type': 'text/html'});
-         fs.readFile('../view/display.html', null, function (error, data) {
-             if (error) {
-                 res.writeHead(404);
-                 res.write('File not found');
-             } else {
-                 res.write(data);
-             }
-             res.end();
-         })*/
     }
 })
 
 //starting server on port 8080
-app.listen(8080, () => console.log("server started at 3000"))
+app.listen(8080, () => console.log("server started at 8080"))
