@@ -56,6 +56,7 @@ Both the features we have to do, user case 1 and user case 2, use the same code.
     
 
 **Instructions for using the application:**
+- Download node.js version 16.0.0 (latest version).
 - Prepare two CSV files : first of them is for learning, and the second one about the anomalies. The first line of the csv files has to be the features names.
 - Download IDE webStorm 2021.1.1 in order to run the application in a comfortable place.
 - Clone the project.
