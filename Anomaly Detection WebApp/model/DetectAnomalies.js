@@ -63,7 +63,7 @@ const createCsvFile = (data, name) => {
     return path;
 }
 
-const detectAnomalies = async (trainFile, anomalyFile) => {
+const detectAnomalies = async (trainFile, anomalyFile, type) => {
 
     let data = trainFile.toString().split("\n");
     let keys = fillCsvKeys(data);
@@ -71,21 +71,16 @@ const detectAnomalies = async (trainFile, anomalyFile) => {
     let trainPath = createCsvFile(data = trainFile.toString(), "train")
     let anomalyPath = createCsvFile(anomalyFile.toString(), "anomaly")
     let tsTrain = new TimeSeries(trainPath);
-    let algorithm = new HybridAlgorithm();
+    let algorithm;
+    if (type === 'linear') {
+        algorithm = new LinearAlgorithm();
+    } else if (type === 'hybrid') {
+        algorithm = new HybridAlgorithm();
+    }
     algorithm.learnNormal(tsTrain)
     let corrFeatures = algorithm.getCf();
     let tsAnomaly = new TimeSeries(anomalyPath);
     let anomalies = algorithm.detect(tsAnomaly);
-
-    /*
-    1) keysAndValuesMap -->  key: key from keys[] , value: values from values[[]]
-    2) map2 -->  key: feature, value: most correlative feature
-    3) array of anomalies --> [ [feature, most corr feature, timeStep], [...], ... ]
-    //
-    // 1) get most correlative - from map2
-    // 2) get feature values - from keysAndValuesMap
-    // 2) get most correlative feature values - from keysAndValuesMap
-    */
 
     let keysAndValuesMap = new Map()
     for (let i = 0; i < keys.length; i++) {
@@ -109,8 +104,6 @@ const detectAnomalies = async (trainFile, anomalyFile) => {
             }
         }
     }
-   /* console.log("most corr map: ")
-    console.log(mostCorrFeatureMap)*/
 
     let anomaliesArray = new Array(anomalies.length)
     for (let i = 0; i < anomalies.length; i++) {
@@ -119,26 +112,6 @@ const detectAnomalies = async (trainFile, anomalyFile) => {
         // split the two correlative by '+'
         let features = currentFeature.split("+");
         anomaliesArray[i] = new Array(3)
-        /* // default case
-         if (currentFeature === keys[0]) {
-             anomaliesArray[i][0] = currentFeature
-             anomaliesArray[i][1] = keys[1]
-             anomaliesArray[i][2] = 0
-         } else {
-             anomaliesArray[i][0] = currentFeature
-             anomaliesArray[i][1] = keys[0]
-             anomaliesArray[i][2] = 0
-         }*/
-
-        /* for (let j = 0; j < corrFeatures.length; j++) {
-             if (corrFeatures[j].feature1 === currentFeature) {
-                 console.log(currentFeature)
-                 anomaliesArray[i][0] = currentFeature
-                 anomaliesArray[i][1] = mostCorrFeatureMap.get(currentFeature)
-                 console.log("most correlative " +mostCorrFeatureMap.get(currentFeature) )
-                 anomaliesArray[i][2] = anomalies[i].timeStep
-             }
-         }*/
 
         // fill the arrays with the correct values of the anomalies and the line it happened
         for (let j = 0; j < corrFeatures.length; j++) {
@@ -154,8 +127,6 @@ const detectAnomalies = async (trainFile, anomalyFile) => {
             }
         }
     }
-
-   // console.log(anomaliesArray)
 
     return {
         anomalies: anomalies,

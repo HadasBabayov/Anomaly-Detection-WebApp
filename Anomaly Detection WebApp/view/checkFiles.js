@@ -28,11 +28,9 @@
         }
     }
     if (correctAnomaly && correctLearn){
-        let a = document.getElementById("upload");
-        a.remove();
+        let removeButton = document.getElementById("upload");
+        removeButton.remove();
         document.getElementById("submit").innerHTML = '    <input type="submit" class="upload-button" value="upload files" >'
     }
 
 }
-
-//module.exports.uploadFiles = uploadFiles

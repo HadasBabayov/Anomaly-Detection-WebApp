@@ -7,7 +7,6 @@ const lineReader = require('n-readlines');
 const FormData = require('form-data')
 const fetch= require('node-fetch')
 const path = require('path');
-const fs = require('fs')
 const app = express()
 
 //define app uses

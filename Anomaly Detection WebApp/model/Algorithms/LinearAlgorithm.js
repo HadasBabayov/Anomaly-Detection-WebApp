@@ -49,7 +49,6 @@ class LinearAlgorithm {
 
             let f2 = atts[jMax];
             let ps = this.toPoints(ts.getAttributeData(f1),ts.getAttributeData(f2));
-
             this.learnHelper(ts,max,f1,f2,ps);
         }
     }
@@ -96,7 +95,6 @@ class LinearAlgorithm {
             c.lin_reg=this.#anomalyDetectionUtil.linear_reg(points);
             c.threshold=this.findThreshold(points,len,c.lin_reg)*1.1; // 10% increase
             this.#cf.push(c);
-            //console.log(c)
         }
     }
 
@@ -119,7 +117,6 @@ class LinearAlgorithm {
     getThreshold(){
         return this.#threshold;
     }
-
 }
 
 module.exports = LinearAlgorithm

@@ -61,8 +61,6 @@
 }
 
 .upload-button {
-    /*font-family: Georgia, serif;*/
-    /*font-family: italic bold 12px/30px Georgia, serif;*/
     font-family: Copperplate, Papyrus, fantasy;
     border-radius: 4px;
     border: none;
@@ -78,55 +76,10 @@
     transition: all 0.5s;
     cursor: pointer;
     margin-left: 730px;
-    /*font-family:  "Sofia", sans-serif;*/
 }
+
 .upload-button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.select-graph-title{
-    font-family: Copperplate, Papyrus, fantasy;
-    text-shadow: 1px 1px blue;
-    text-emphasis-style: double-circle;
-    font-size: 17px;
-    margin-left: 100px;
-    font-weight: bold;
-}
-.list-box {
-    margin-left: 100px;
-    width: 200px;
-    height: 300px;
-    background-color: blue;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: Copperplate, Papyrus, fantasy;
-}
-
-.show-graph {
-    margin-top: 20px;
-    margin-right: 100px;
-}
-
-.anomaly-report-title {
-    font-family: Copperplate, Papyrus, fantasy;
-    text-shadow: 1px 1px blue;
-    text-emphasis-style: double-circle;
-    font-size: 17px;
-    margin-left: 50px;
-    font-weight: bold;
-}
-
-.anomaly-list {
-    width: 200px;
-    height: 300px;
-    background-color: blue;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: Copperplate, Papyrus, fantasy;
-    margin-left: 50px;
-    margin-right: 300px;
 }
 
 .frame {
