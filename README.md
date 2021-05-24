@@ -58,7 +58,8 @@ Both the features we have to do, user case 1 and user case 2, use the same code.
 **Instructions for using the application:**
 - Download node.js version 16.0.0 (latest version).
 - Prepare two CSV files : first of them is for learning, and the second one about the anomalies. The first line of the csv files has to be the features names.
-- Download IDE webStorm 2021.1.1 in order to run the application in a comfortable place.
+- Download IDE webStorm 2021.1.1 in order to run the application in a comfortable place. NOTICE: The csv files must be encoded with a new line '\n', if your files are encoded in 
+  a different way, please change their encoding to UNIX new line ('\n').
 - Clone the project.
 - Do in the terminal cd "Anomaly Detection WebApp"
 - Install all the moudles we need for running the server, do it by writing in the terminal: npm install.
