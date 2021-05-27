@@ -1,6 +1,6 @@
 # Anomaly Detection Web Application:
 
-Our application is an anomaly detevtion web app. The user has to choose two csv files, one for learning and the other one for anomalies. He chooses of he want to check on linear or hybrid algorithm.
+Our application is an anomaly detevtion web app. The user has to choose and upload two csv files, one for learning and the other one for anomalies. He chooses of he want to check on linear or hybrid algorithm.
 By pressing the button 'check files', if the files are valid the user needs to press the button 'upload files' and then the algorithms start to work in the bakground.
 As a result of the process of the algorithms we see in our web page a table with the anomalies and in which line it happened.
 
