@@ -1,25 +1,27 @@
-//imports modules
 const express = require('express')
-const json2html = require('node-json2html');
+const json2html = require('node-json2html')
 const fileUpload = require('express-fileupload')
 const model = require('../model/detectAnomalies')
-const lineReader = require('n-readlines');
+const lineReader = require('n-readlines')
 const FormData = require('form-data')
 const fetch= require('node-fetch')
-const path = require('path');
+const path = require('path')
 const app = express()
+PORT=8080
 
-//define app uses
+//app uses
 app.use(express.urlencoded({
     extended: false
 }))
 app.use(fileUpload({}))
 app.use(express.static('view'))
 
-//Get Method for '/' url
+//Get '/'
 app.get('/', (req, res) => {
     res.sendFile('index.html')
 })
+
+//Post '/'
 app.post('/', (req, res) => {
     //get values from view
     let trainFile = req.files.learnFile
@@ -31,7 +33,8 @@ app.post('/', (req, res) => {
         res.end()
     })
 })
-//Post Method for '/search' url
+
+//Post '/detect'
 app.post('/detect', (req, res) => {
     if (req.files) {
 
@@ -42,7 +45,7 @@ app.post('/detect', (req, res) => {
         data.append("learnFile", req.files.learnFile.data)
         data.append("anomalyFile", req.files.anomalyFile.data)
         data.append("selectedAlgo", req.body.selectedAlgo)
-        fetch(('http://localhost:8080/'), {
+        fetch(('http://localhost:' + PORT + '/'), {
             method: 'POST',
             body: data
         }).then(result => result.json())
@@ -77,5 +80,5 @@ app.post('/detect', (req, res) => {
     }
 })
 
-//starting server on port 8080
-app.listen(8080, () => console.log("server started at 8080"))
+//starting the server
+app.listen(PORT, () => console.log("server started at port " + PORT))
