@@ -1,7 +1,7 @@
 class CorrelatedFeatures{
     feature1
     feature2
-    corrlation
+    correlation
     lin_reg
     threshold
     cx

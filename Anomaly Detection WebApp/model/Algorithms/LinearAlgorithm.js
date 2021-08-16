@@ -20,7 +20,7 @@ class LinearAlgorithm {
      * Find and set the most correlative features
      */
     learnNormal(ts){
-        let atts = ts.gettAttributes()
+        let atts = ts.getAttributes()
 
         //init vals
         let vals = new Array(atts.length)
@@ -66,7 +66,7 @@ class LinearAlgorithm {
             let c = new CorrelatedFeatures();
             c.feature1=f1;
             c.feature2=f2;
-            c.corrlation=parseFloat(pearson);
+            c.correlation=parseFloat(pearson);
             c.lin_reg=this.#anomalyDetectionUtil.linear_reg(points);
             c.threshold=this.findThreshold(points,len,c.lin_reg)*1.1; // 10% increase
             this.#cf.push(c);

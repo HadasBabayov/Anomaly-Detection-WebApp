@@ -1,10 +1,9 @@
 const Shapes = require("./Shapes")
-let mathjs = require('mathjs')
 
 class AnomalyDetectionUtil {
-    constructor() {
-    }
+    constructor() {}
 
+    // calculates the avg of the given float array
     avg(arr) {
         let sum = 0;
         for(let i = 0; i < arr.length; i++){

@@ -32,7 +32,7 @@ class HybridAlgorithm extends LinearAlgorithm{
             let corrFeatures = new CorrelatedFeatures()
             corrFeatures.feature1 = f1;
             corrFeatures.feature2 = f2;
-            corrFeatures.corrlation = pearson;
+            corrFeatures.correlation = pearson;
             corrFeatures.threshold = circle.radius*1.1; // 10% increase
             corrFeatures.cx = circle.center.x;
             corrFeatures.cy = circle.center.y;
@@ -45,9 +45,9 @@ class HybridAlgorithm extends LinearAlgorithm{
     *  in addition if the correlation is between min value and the threshold
     */
     isAnomalous(x, y, correlatedFeatures) {
-        return (correlatedFeatures.corrlation >= super.getThreshold() && super.isAnomalous(x,y,correlatedFeatures)) ||
-               (correlatedFeatures.corrlation > this.#minValue &&
-                correlatedFeatures.corrlation < super.getThreshold() &&
+        return (correlatedFeatures.correlation >= super.getThreshold() && super.isAnomalous(x,y,correlatedFeatures)) ||
+               (correlatedFeatures.correlation > this.#minValue &&
+                correlatedFeatures.correlation < super.getThreshold() &&
                 this.dist(new Shapes.Point(correlatedFeatures.cx, correlatedFeatures.cy),
                     new Shapes.Point(x, y)) > correlatedFeatures.threshold);
     }

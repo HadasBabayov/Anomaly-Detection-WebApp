@@ -33,7 +33,7 @@ class TimeSeries {
         return this.mapValues[name];
     }
 
-    gettAttributes() {
+    getAttributes() {
         return this.keys;
     }
 
