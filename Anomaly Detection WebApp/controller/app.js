@@ -53,7 +53,7 @@ app.post('/detect', (req, res) => {
 
                 const readLine = new lineReader(path.join(__dirname, '../view/display.html'));
 
-                //read from the html file
+                //read from html file
                 let line = readLine.next()
                 for (let i = 0; i < 22; i++) {
                     res.write(line)
